@@ -1,8 +1,8 @@
 def square_array(array)
   new_array=[]
-  index=0 
+  index = 0 
   while index < array.length do
-    new array << array[inex] * array [index]
+    new array << array[idnex] * array [index]
     index += 1 
   end
   new_array
