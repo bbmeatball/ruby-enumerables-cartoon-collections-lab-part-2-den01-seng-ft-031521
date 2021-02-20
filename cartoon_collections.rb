@@ -17,6 +17,7 @@ end
 def long_planeteer_calls(planeteer_calls)
 
   long_planeteer_calls.any?{ |call| call.length>4}
+  long_planeteer_calls.all? {|call| call.length<4}
 end
 
 def find_valid_calls(planeteer_calls)
