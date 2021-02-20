@@ -10,11 +10,10 @@ end
 square_array([1,2,3,4])
 
 def summon_captain_planet(planeteer_calls)
-planeteer_calls.map {|planeteer_calls|
+planeteer_calls.map {|call| call.capitalize + "!"}
   # Use an Enumerable to capitalize and add '!' to every element in the passed in array
   # Return a new array of the results
 end
-summon_captain_planet(["earth","wind","fire","water","heart"])
 
 def long_planeteer_calls(planeteer_calls)
   # Use an Enumerable to check if any string in the passed in array is greater than 4 characters long
