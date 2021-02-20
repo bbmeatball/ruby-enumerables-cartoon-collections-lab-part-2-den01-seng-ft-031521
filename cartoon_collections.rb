@@ -15,11 +15,10 @@ planeteer_calls.map {|call| call.capitalize + "!"}
 end
 
 def long_planeteer_calls(planeteer_calls)
+ long_planeteer_calls.any?{ |call| call.length>4}
 
-  long_planeteer_calls.any?{ |call| call.length>4}
-  long_planeteer_calls.all? {|call| call.length<4}
 end
-long_planeteer_calls(planeteer_calls)
+
 
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
